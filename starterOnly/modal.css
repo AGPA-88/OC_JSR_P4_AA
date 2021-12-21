@@ -527,6 +527,19 @@ footer {
   }
 }
 
+.has-error {
+  border: 2px solid red;
+}
+
 .input-error{
-  font-size: medium;
+  font-size: small;
+  color: red;
+}
+
+.success{
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  text-align: center;
+  min-height:  80vh;
 }
