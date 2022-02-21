@@ -68,7 +68,10 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+/* MEDIA QUERIES SECTION */
+
+/* 948px */
+@media screen and (max-width: 948px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -77,6 +80,15 @@ img {
   }
 }
 
+/* 768px */
+@media screen and (max-width: 768px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: #fe142f;
+  }
+}
 @media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -91,8 +103,7 @@ img {
   }
 }
 
-
-
+/* 540px */
  @media screen and (max-width: 540px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -100,13 +111,39 @@ img {
     display: block;
     margin-top: -15px;
   }
-} 
-
-@media screen and (min-width: 475px) {
-  .hero-headline{
-    font-size: 2rem;
+  main{
+    margin: 0!important;
   }
-} 
+  .hero-headline{
+    font-size: 2.5rem!important;
+    width: 100%;
+  }
+  .hero-text{
+    font-size: 1rem!important;
+    width: 100%;
+  }
+}
+
+/* 475px */
+@media screen and (max-width: 475px) {
+  main{
+    margin: 0!important;
+  }
+  .hero-content{
+    padding: 0!important;
+  }
+  .hero-headline{
+    font-size: 2.5rem!important;
+    max-width: 95vw;
+  }
+  .hero-text{
+    font-size: 1rem!important;
+    max-width: 95vw;
+    margin: 0;
+  }
+}
+/* MEDIA QUERIES SECTION END */
+
 
 main {
   font-size: 130%;
@@ -233,7 +270,7 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-/* 
+/*
 input[data-error]::after {
     content: attr(data-error);
     font-size: 0.4em;
@@ -443,6 +480,7 @@ input[data-error]::after {
   z-index: 1;
 }
 .hero-headline {
+  width: 100%;
   font-size: 6rem;
   font-weight: normal;
   white-space: nowrap;
@@ -507,7 +545,7 @@ footer {
     white-space: normal;
   }
   .hero-text {
-    width: unset;
+    width: 100%;
     font-size: 1.5rem;
   }
   .hero-img img {
