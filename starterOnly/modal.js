@@ -1,4 +1,4 @@
-    function editNav() {
+function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -21,8 +21,10 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
+// closeBtn.addEventListener("click", () => (modalbg.style.display = "none"));
+
 closeBtn.addEventListener("click", closeModal);
 
-function closeModal(){
+function closeModal() {
   modalbg.style.display = "none";
 }
